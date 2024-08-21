@@ -7,7 +7,7 @@ import ProgressiveImage from './ProgressiveImage';
 import styles from './styles';
 import { StoryViewProps, StroyTypes } from './types';
 
-const BUFFER_TIME = 1000 * 60;
+// const BUFFER_TIME = 1000 * 60;
 
 const StoryView = (props: StoryViewProps) => {
   const [loading, setLoading] = useState(true);
