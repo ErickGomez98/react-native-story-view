@@ -70,11 +70,11 @@ const StoryView = (props: StoryViewProps) => {
                   props?.onVideoProgress?.(data);
                 }
               }}
-              bufferConfig={{
-                minBufferMs: BUFFER_TIME,
-                bufferForPlaybackMs: BUFFER_TIME,
-                bufferForPlaybackAfterRebufferMs: BUFFER_TIME,
-              }}
+              // bufferConfig={{
+              //   minBufferMs: BUFFER_TIME,
+              //   bufferForPlaybackMs: BUFFER_TIME,
+              //   bufferForPlaybackAfterRebufferMs: BUFFER_TIME,
+              // }}
               onBuffer={onBuffer}
               onLoadStart={onLoadStart}
               onLoad={(item: OnLoadData) => {
