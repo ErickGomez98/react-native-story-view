@@ -98,13 +98,6 @@ exports[`StoryContainer component Match Snapshot 1`] = `
               }
             >
               <Video
-                // bufferConfig={
-                //   Object {
-                //     "bufferForPlaybackAfterRebufferMs": 60000,
-                //     "bufferForPlaybackMs": 60000,
-                //     "minBufferMs": 60000,
-                //   }
-                // }
                 onBuffer={[Function]}
                 onEnd={[Function]}
                 onError={[Function]}
@@ -199,13 +192,6 @@ exports[`StoryView component Match Snapshot 1`] = `
   }
 >
   <Video
-    // bufferConfig={
-    //   Object {
-    //     "bufferForPlaybackAfterRebufferMs": 60000,
-    //     "bufferForPlaybackMs": 60000,
-    //     "minBufferMs": 60000,
-    //   }
-    // }
     onBuffer={[Function]}
     onError={[Function]}
     onLoad={[Function]}
