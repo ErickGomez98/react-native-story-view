@@ -45,7 +45,7 @@
   "scripts": {
     "prepare": "husky install && yarn build",
     "clean": "rm -rf node_modules",
-    "build": "rm -rf lib && tsc -p . && cp -R ./src/assets ./lib/ ",
+    "build": "rm -rf lib && ts-node --transpile-only -p . && cp -R ./src/assets ./lib/ ",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' -c .eslintrc --fix ",
     "build_local": "yarn build && yarn pack",
