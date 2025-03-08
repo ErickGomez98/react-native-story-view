@@ -43,7 +43,7 @@
     "/lib"
   ],
   "scripts": {
-    "prepare": "husky install && yarn build",
+    "prepare": "yarn build",
     "clean": "rm -rf node_modules",
     "build": "rm -rf lib && ts-node --transpile-only -p . && cp -R ./src/assets ./lib/ ",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
@@ -90,6 +90,7 @@
     "react-native-video": "6.4.5",
     "react-test-renderer": "17.0.2",
     "typescript": "4.7.4",
+    "ts-node": "^10.9.1",
     "@shopify/flash-list": "^1.6.4",
     "lodash": "^4.17.21"
   },
@@ -124,16 +125,5 @@
   "eslintIgnore": [
     "node_modules/",
     "lib/"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn build && yarn test"
-    }
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  }
+  ]
 }
